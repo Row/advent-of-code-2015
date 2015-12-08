@@ -72,10 +72,9 @@ unsigned short int resolveExpression(std::string expression) {
         unsigned short int r = std::stoi(expression);
         return r;
     } else if (std::regex_match(expression, exprVar)) {
-        //assert(expressions.);
         unsigned int r = resolveExpression(expressions[expression]);
         expressions[expression] = std::to_string(r);
-        return resolveExpression(expressions[expression]);
+        return r;
     } else if (std::regex_search(expression, m, exprNegation)) {
         return ~ resolveExpression(m[1]);
     } else if (std::regex_search(expression, m, exprBinary)) {
@@ -146,7 +145,5 @@ int main(int argc, const char * argv[]) {
         resetWires(filePath);
         expressions["b"] = "3176";
         printf("Part two: %d.\n", resolveExpression("a"));
-
     }
-    
 }
