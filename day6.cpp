@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
     auto lights = new bool[arrLength];
     auto lightBrightness = new int[arrLength];
     // Parse
-    std::ifstream file("/Users/jon/Documents/advent-of-code/advent-of-code/day6.txt");
+    std::ifstream file("day6.txt");
     std::string str;
     
     std::regex instructionRegex("(.*) ([0-9]+),([0-9]+) through ([0-9]+),([0-9]+).*");

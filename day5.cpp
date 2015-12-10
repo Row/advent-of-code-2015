@@ -47,7 +47,7 @@
 #include <iterator>
 
 void day5PartOne() {
-    std::ifstream file("/Users/jon/Documents/advent-of-code/advent-of-code/day5.txt");
+    std::ifstream file("day5.txt");
     std::string str;
     
     std::regex threeVowels(".*[aeiou].*[aeiou].*[aeiou].*");
@@ -70,7 +70,7 @@ void day5PartOne() {
 }
 
 void day5PartTwo() {
-    std::ifstream file("/Users/jon/Documents/advent-of-code/advent-of-code/day5.txt");
+    std::ifstream file("day5.txt");
     std::string str;
     
     std::regex twoLetterAppearAgain(".*(..).*\\1.*");

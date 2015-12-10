@@ -112,7 +112,7 @@ int main(int argc, const char * argv[])
     assert(countLiteral(escape("\"\"")) == 6);
     assert(countLiteral(escape("\"\\x27\"")) == 11);
     
-    std::string filePath = "/Users/jon/Documents/advent-of-code/advent-of-code/day8.txt";
+    std::string filePath = "day8.txt";
     std::ifstream file(filePath);
     std::string str;
     

@@ -115,8 +115,8 @@ void resetWires(std::string filePath) {
 int main(int argc, const char * argv[]) {
 
     // Parse
-    //std::string filePath = "/Users/jon/Documents/advent-of-code/advent-of-code/day7test.txt";
-    std::string filePath = "/Users/jon/Documents/advent-of-code/advent-of-code/day7.txt";
+    //std::string filePath = "day7test.txt";
+    std::string filePath = "day7.txt";
     
     assert(std::regex_match("jp OR ka -> kb", exprReg));
     assert(std::regex_match("199", exprNum));
@@ -128,7 +128,7 @@ int main(int argc, const char * argv[]) {
 
     resetWires(filePath);
     
-    if (filePath.compare("/Users/jon/Documents/advent-of-code/advent-of-code/day7test.txt") == 0) {
+    if (filePath.compare("day7test.txt") == 0) {
         assert(resolveExpression("d") == 72);
         assert(resolveExpression("e") == 507);
         assert(resolveExpression("f") == 492);
