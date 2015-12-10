@@ -1,5 +1,5 @@
 //
-//  day7.cpp
+//  day9.cpp
 //  advent-of-code
 //
 /*
@@ -64,7 +64,7 @@ void printDistanceMatrix(short distances[], short numDest) {
 int main(int argc, const char * argv[])
 {
     // Parse
-    std::string filePath = "/Users/jon/Documents/advent-of-code/advent-of-code/day9.txt";
+    std::string filePath = "day9.txt";
     
     std::ifstream file(filePath);
     std::string str;
@@ -97,7 +97,7 @@ int main(int argc, const char * argv[])
     for (short i = 0; i < l; ++i) {
         distances[i * l + i] = 0;
     }
-    
+
     for (auto it = parsedData.begin(); it != parsedData.end(); it++) {
         const short id1 = *it++;
         const short id2 = *it++;
@@ -128,5 +128,4 @@ int main(int argc, const char * argv[])
 
     printf("Part one: the shortest path is %d.\n", shortest);
     printf("Part two: the longest path is %d.\n", longest);
-
 }
